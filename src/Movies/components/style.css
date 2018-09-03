@@ -1,0 +1,88 @@
+.Movies{
+  padding-top: 20px;
+}
+
+.CardMovie{
+  width: 484px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
+  position: relative;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.CardMovie_a{
+  color: black;
+}
+
+.CardMovie_a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.CardMovie_img{
+  width: 35%;
+  float: left;
+}
+
+.CardMovie_img img{
+  width: 100%;
+  height: 278px;
+}
+
+.CardMovie_block{
+  display: inline-block;
+  width: 65%;
+  padding-left: 15px;
+}
+
+.CardMovie_block_title{
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.CardMovie_block_score{
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 15px;
+  position: relative;
+  right: 10px;
+}
+
+.CardMovie_block_year{
+  font-size: 13px;
+}
+
+.CardMovie_block_category{
+  font-size: 13px;
+  margin-left: 30px;
+}
+
+.col-12.CardMovie_block_desciption_line{
+  border-bottom: solid 1px #efefef;
+}
+
+.CardMovie_block_desciption{
+  font-size: 13px;
+  padding-right: 12px;
+  height: 125px;
+}
+
+.CardMovie_inf_p{
+  margin-top: 10px;
+}
+
+.col-10{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .CardMovie_img img{
+    width: 100%;
+    height: 319px;
+  }
+}

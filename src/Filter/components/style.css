@@ -1,0 +1,12 @@
+.Filter{
+  margin-top: 20px;
+}
+
+.Filter_label{
+  font-weight: 500;
+}
+
+.Filter_select{
+  border: 1px solid black;
+  border-radius: 10px;
+}

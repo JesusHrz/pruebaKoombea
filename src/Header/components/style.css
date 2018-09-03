@@ -1,0 +1,53 @@
+.Header {
+  width: 100%;
+  height: 123px;
+  background-color: #081c24;
+}
+
+.Header p{
+  color: white;
+}
+
+.Header_circle{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-top: 25px;
+  background-color: #50e3c2;
+}
+
+.Header a:hover{
+  text-decoration: none;
+}
+
+.Header_circle_iconM{
+  position: absolute;
+  width: 74px;
+  height: 80px;
+  margin-bottom: 0px !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 84px;
+  color: black !important;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #071c24;
+  position: relative;
+  bottom: 11px;
+  text-decoration: none;
+  right: 1px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.Header_p{
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.col1{
+  border: 1px solid blue;
+}
