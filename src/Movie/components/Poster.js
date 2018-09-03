@@ -5,7 +5,7 @@ import './style.css'
 function Poster (props){
   return (
     <section className='Poster'>
-      <section className='container'>
+      <div className='container'>
         <div className='row'>
           <article className='offset-xs-1 col-10'>
             <div className='row'>
@@ -43,7 +43,7 @@ function Poster (props){
             </div>
           </article>
         </div>
-      </section>
+      </div>
     </section>
   )
 }

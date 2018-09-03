@@ -4,7 +4,6 @@ import MovieLayout from '../components/MovieLayout'
 import Header from '../../Header/components/Header'
 import Poster from '../components/Poster'
 import MovieDescription from '../components/MovieDescription'
-import Footer from '../components/Footer'
 
 class Movie extends Component{
 	constructor(props){
@@ -43,7 +42,6 @@ class Movie extends Component{
 				<Header />
         <Poster movie={this.state.movie} crew={this.state.crew} />
 				<MovieDescription movie={this.state.movie} cast={this.state.cast}  genres={this.state.genres} video={this.state.video}/>
-				<Footer />
 			</MovieLayout>
 		)
 	}

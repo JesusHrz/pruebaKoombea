@@ -5,7 +5,8 @@ import './style.css'
 function MoviesLayout(props) {
 	return (
 		<section className='Movies container'>
-				{props.children}
+			<h1 className='Movies_title'>Descubre Nuevas Películas</h1>
+			{props.children}
 		</section>
 	)
 }

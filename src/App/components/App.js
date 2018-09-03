@@ -1,10 +1,11 @@
 import React from 'react'
+import { Fragment } from 'react'
 
 function App(props) {
 	return(
-		<div>
+		<Fragment>
 			{props.children}
-		</div>
+		</Fragment>
 	)
 }
 

@@ -5,7 +5,7 @@ import './style.css'
 
 function SearchInput(props) {
 	return(
-    <section className='Search'>
+    <div className='Search'>
       <div className='container'>
         <div className='row'>
           <div className='Search_icon col-1 text-right text-xs-center flex-xs-middle'>
@@ -35,7 +35,7 @@ function SearchInput(props) {
 					</div>
         </div>
       </div>
-    </section>
+    </div>
 	)
 }
 

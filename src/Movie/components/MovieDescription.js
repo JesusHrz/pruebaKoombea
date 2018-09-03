@@ -5,13 +5,11 @@ import './style.css'
 function MovieDescription (props){
   return (
     <section className='MovieDescription'>
-      <section className='container'>
+      <div className='container'>
         <div className='row'>
           <div className='col-12'>
-            <h3 className='MovieDescription_h3'>Elenco Principal</h3>
+            <h1 className='MovieDescription_h1'>Elenco Principal</h1>
           </div>
-        </div>
-        <div className='row'>
         {
           props.cast.map((elen)=>{
             if(elen.order < 6){
@@ -32,10 +30,8 @@ function MovieDescription (props){
         </div>
         <div className='row'>
           <div className='col-12'>
-            <h3 className='MovieDescription_h3'>Datos</h3>
+            <h2 className='MovieDescription_h2'>Datos</h2>
           </div>
-        </div>
-        <div className='row'>
           <div className='col-12 col-md-3 col-lg-2'>
             <p className='MovieDescription_card_text_bold'>Título Original</p>
             <p>{`${props.movie.original_title}`}</p>
@@ -67,7 +63,7 @@ function MovieDescription (props){
         </div>
         <div className='row'>
           <div className='col-3'>
-            <h5 className='MovieDescription_h5'>Géneros</h5>
+            <h2 className='MovieDescription_h2'>Géneros</h2>
           </div>
         </div>
         <div className='row'>
@@ -83,10 +79,8 @@ function MovieDescription (props){
         </div>
         <div className='row'>
           <div className='col-3'>
-            <h5 className='MovieDescription_h5'>Palabras Claves</h5>
+            <h2 className='MovieDescription_h2'>Palabras Claves</h2>
           </div>
-        </div>
-        <div className='row'>
           {
             props.genres.map((i, key)=>{
               return (
@@ -99,17 +93,15 @@ function MovieDescription (props){
         </div>
         <div className='row'>
           <div className='col-3'>
-            <h5 className='MovieDescription_h5'>Tráiler</h5>
+            <h2 className='MovieDescription_h2'>Tráiler</h2>
           </div>
-        </div>
-        <div className='row'>
           <div className='col-8 offset-xs-1 col1'>
             <article className='MovieDescription_trailer'>
               <iframe className='MovieDescription_trailer_video' type='text/html'  frameBorder='0' allow='autoplay; encrypted-media' allowFullScreen src={`https://www.youtube.com/embed/${props.video.key}`}></iframe>
             </article>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   )
 }

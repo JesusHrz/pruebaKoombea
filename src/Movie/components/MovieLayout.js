@@ -1,10 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+
+import Footer from '../../Footer/components/Footer'
 
 function MovieLayout (props){
   return (
-    <section>
-        {props.children}
-    </section>
+    <Fragment>
+      <section>
+          {props.children}
+      </section>
+      <Footer />
+    </Fragment>
   )
 }
 

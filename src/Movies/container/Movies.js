@@ -110,7 +110,6 @@ class Movies extends Component{
 	render() {
 		return (
 			<MoviesLayout>
-        <h3>Descubre Nuevas Películas</h3>
         <Filter
 					handleOnChangeYear={this.handleOnChangeYear}
 					handleOnChangePopularity = {this.handleOnChangePopularity}
