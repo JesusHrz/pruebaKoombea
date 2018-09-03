@@ -62,11 +62,9 @@ function MovieDescription (props){
           </div>
         </div>
         <div className='row'>
-          <div className='col-3'>
+          <div className='col-12'>
             <h2 className='MovieDescription_h2'>Géneros</h2>
           </div>
-        </div>
-        <div className='row'>
           {
             props.genres.map((i, key)=>{
               return (
@@ -78,7 +76,7 @@ function MovieDescription (props){
           }
         </div>
         <div className='row'>
-          <div className='col-3'>
+          <div className='col-12'>
             <h2 className='MovieDescription_h2'>Palabras Claves</h2>
           </div>
           {
@@ -92,7 +90,7 @@ function MovieDescription (props){
           }
         </div>
         <div className='row'>
-          <div className='col-3'>
+          <div className='col-12'>
             <h2 className='MovieDescription_h2'>Tráiler</h2>
           </div>
           <div className='col-8 offset-xs-1 col1'>
