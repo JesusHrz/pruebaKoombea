@@ -5,9 +5,7 @@ import Footer from '../../Footer/components/Footer'
 function MovieLayout (props){
   return (
     <Fragment>
-      <section>
-          {props.children}
-      </section>
+      {props.children}
       <Footer />
     </Fragment>
   )

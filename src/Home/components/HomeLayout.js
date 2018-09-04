@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import './style.css'
 
 function HomeLayout(props) {
 	return (
-		<section>
+		<Fragment>
 				{props.children}
-		</section>
+		</Fragment>
 	)
 }
 
