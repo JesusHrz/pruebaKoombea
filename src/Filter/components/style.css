@@ -1,12 +1,49 @@
-.Filter{
-  margin-top: 20px;
+.filter{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.Filter_label{
-  font-weight: 500;
+.filter__title{
+  width: 100%;
+  font-size: 25px;
 }
 
-.Filter_select{
+.filter__group{
+  flex-basis: 24%;
+  margin: 30px 5px 5px 5px;
+}
+
+.filter__group-label{
+  font-weight: 600;
+  display: block;
+}
+
+.filter__group-input{
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid #8592a7;
+  color:  black;
+  font-size: 15px;
+  width: 100%;
+  background-color: white;
+  border-radius: .25rem;
+}
+
+.filter_select{
   border: 1px solid black;
   border-radius: 10px;
+}
+
+@media (max-width: 580px) {
+  .filter__group{
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .filter__group{
+    flex-basis: 100%;
+    margin: 10px 5px 5px 5px;
+  }
 }

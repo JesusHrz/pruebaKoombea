@@ -11,7 +11,7 @@ class Router extends Component {
 			<BrowserRouter>
 				<App>
 					<Route exact path='/' component={Home} />
-					<Route path='/movie/:id' component={Movie} />
+					<Route exact path='/movie/:id' component={Movie} />
 				</App>
 			</BrowserRouter>
 		)

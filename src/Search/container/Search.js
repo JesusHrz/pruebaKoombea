@@ -33,7 +33,7 @@ class Search extends Component{
       let movies = fetch(`https://api.themoviedb.org/3/search/movie?api_key=b89ba07af49cab5cbe07d4d7bb9d1dfa&query=${this.state.query}`).then((res)=>{
          return res.json()
       }).then((movies)=>{
-        console.log(movies)
+        console.log(movies.results)
         this.setState({
           listMovies: movies.results
         })

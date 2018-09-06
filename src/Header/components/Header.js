@@ -5,23 +5,26 @@ import './style.css'
 
 function Header(props) {
 	return(
-		<header className='Header'>
+		<header className='header'>
 			<div className='container'>
-				<div className='row'>
-					<div className='col-1 '>
-						<Link className='Header_link' to='/'>
-							<div className='Header_circle'>
-								<p className='Header_circle_iconM'>M</p>
-							</div>
-						</Link>
-					</div>
-					<div className='col-1 offset-xs-1 offset-lg-0 text-xs-center'>
-						<p className='Header_p'>Descubre</p>
-					</div>
+				<div className='header__logo'>
+					<Link className='header__logo-link' to='/'>
+						M
+					</Link>
 				</div>
+				<h1 className='header__title'>Descubre</h1>
 			</div>
-    </header>
+		</header>
 	)
 }
 
 export default Header
+
+
+// card
+// 	card__header
+// 		card__title
+// 	card__body
+// 		card__body
+// 	card__footer
+// 		card__title

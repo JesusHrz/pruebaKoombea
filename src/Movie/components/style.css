@@ -1,118 +1,225 @@
-.Poster{
-  width: 100%;
+.poster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
-  background-image: -webkit-linear-gradient(rgba(144, 151, 156, 0.59), rgba(83, 93, 101, 0.93));
-  background-image: -o-linear-gradient(rgba(144, 151, 156, 0.59), rgba(83, 93, 101, 0.93));
   background-image: linear-gradient(rgba(144, 151, 156, 0.59), rgba(83, 93, 101, 0.93));
   padding-top: 25px;
+  padding-bottom: 25px;
   font-size: 15px;
 }
 
-.Poster_img{
-  width: 100%;
-  height: 449px;
-  padding-bottom: 25px;
+.poster .container{
+  justify-content: center;
 }
 
-.Poster_circle-score{
+.poster__left{
+  display: flex;
+  flex-basis: 30%;
+}
+
+.poster__info{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-basis: 50%;
+  padding: 10px;
+}
+
+.poster__img{
+  width: 100%;
+  height: 100%;
+}
+
+.poster__info-title{
+  flex-basis: 100%;
+  font-size: 2.5rem;
+}
+
+.poster__info-score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 68px;
   height: 68px;
+  margin-top: 20px;
   border-radius: 100%;
   background-color: #535d65;
-  position: relative;
-  display: inline-block;
 }
 
-.Poster_circle-score_p{
-  position: absolute;
-  left: 14px;
-  top: 18px;
-  font-size: 22px;
+.poster__info-score-points{
+  font-size: 20px;
 }
 
-.Poster_p{
-  margin-top: 12px;
+.poster__info-user{
+  flex-basis: 80%;
+  align-self: center;
+  margin-top: 20px;
+  padding-left: 20px;
 }
 
-.Poster_p_name{
-  font-weight: 700;
-  margin-bottom: 0px;
+.poster__info-general{
+  flex-basis: 100%;
+  margin-top: 20px;
 }
 
-.MovieDescription{
+.poster_info-overview{
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+
+.poster__info-team{
+  margin-top: 10px;
+  font-size: 18px;
+  flex-basis: 100%;
+}
+
+.poster__info-name{
+  margin-top: 15px;
+  font-weight: bold;
+  flex-basis: 100%;
+}
+
+.poster__info-job{
+  flex-basis: 100%;
+}
+
+.movie-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f4f4f4;
+  padding: 20px 0px;
+}
+
+.movie-description__title{
+  flex-basis: 100%;
+  font-size: 28px;
+}
+
+.movie-description__card-elenco{
+  flex-basis: 15%;
+  height: 310px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.card-elenco__img{
+  width: 100%;
+  height: 198px;
+}
+
+.card-elenco__name{
+  margin-top: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.card-elenco__character{
+  margin-top: 10px;
+  padding-left: 10px;
   font-size: 15px;
 }
 
-.MovieDescription_h1{
-  font-size: 25px;
+.movie-description__title-default{
+  flex-basis: 100%;
+  font-size: 20px;
+  margin-top: 40px;
 }
 
-.MovieDescription_h2{
-  font-size: 22px;
+.movie-info{
+  flex-basis: 13%;
 }
 
-.MovieDescription_h1, .MovieDescription_h2{
-  padding-bottom: 10px;
-  margin-top: 25px;
-  font-weight: 500;
-}
-
-.MovieDescription_card-elenco{
-  border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04);
-  background-color: #ffffff;
-  border: solid 1px #eaeaea;
-  margin-bottom: 10px;
-}
-
-.MovieDescription_card-elenco_img{
-  height: 198px;
-  width: 100%;
-}
-
-.MovieDescription_card-elenco_text{
-  background-color: #ffffff;
-  padding-top: 8px;
-  padding-left: 5px;
-  height: 110px;
-}
-
-.MovieDescription_card-elenco_text_bold{
-  margin-bottom: 0px;
-}
-
-.MovieDescription_card-elenco_text_p{
+.movie-info__title{
+  margin-top: 20px;
+  font-weight: bold;
   padding-bottom: 10px;
 }
 
-.MovieDescription_card-elenco_text_bold{
-  font-weight: 500;
+.text-center{
+  display: flex;
+  justify-content: center;
 }
 
-.MovieDescription_card_text_bold{
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.MovieDescription_genres{
+.movie-description__genres{
   padding: 6px;
   border-radius: 22px;
   color: #535d65;
   background-color: #50e3c2;
   display: inline-block;
   width: auto;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
-.MovieDescription_trailer{
-  height: 459px;
+.trailer-container{
+  flex-basis: 70%;
+  height: 500px;
 }
 
-.MovieDescription_trailer_video{
+.trailer-container__video{
   width: 100%;
   height: 100%;
 }
 
-.col1{
-  border: 1px solid black;
+@media (max-width: 1126px) {
+  .movie-info{
+    flex-basis: 15%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .movie-description__card-elenco{
+    flex-basis: 18%;
+  }
+  .movie-info{
+    flex-basis: 20%;
+  }
+}
+
+@media (max-width: 850px) {
+  .movie-description__card-elenco{
+    flex-basis: 19%;
+  }
+  .movie-info{
+    flex-basis: 22%;
+  }
+}
+
+@media (max-width: 800px) {
+  .poster__left{
+    flex-basis: 50%;
+  }
+  .poster__info{
+    flex-basis: 80%;
+  }
+}
+
+@media (max-width: 690px) {
+  .movie-description__card-elenco{
+    flex-basis: 22%;
+  }
+  .movie-info{
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 690px) {
+  .movie-description__card-elenco{
+    flex-basis: 30%;
+  }
+}
+
+@media (max-width: 517px) {
+  .poster__info-user{
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 516px) {
+  .movie-description__card-elenco{
+    flex-basis: 40%;
+  }
 }

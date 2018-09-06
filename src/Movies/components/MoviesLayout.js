@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 
 import './style.css'
 
-function MoviesLayout(props) {
+function moviesLayout(props) {
 	return (
-		<section className='Movies container'>
-			<h1 className='Movies_title'>Descubre Nuevas Películas</h1>
-			{props.children}
+		<section className='movies'>
+			<div className='container'>
+				{props.children}
+			</div>
 		</section>
 	)
 }
 
-export default MoviesLayout
+export default moviesLayout
